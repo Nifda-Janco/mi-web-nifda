@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Nifda</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #a92b94, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.card {
+  background: rgba(0,0,0,0.4);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.fotos {
+ 
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;   /* si no entran, bajan */
+}
+
+
+.fotos img {
+ 
+  width: 200px;      /* tamaño grande */
+  height: auto;      /* mantiene proporción */
+  border-radius: 15px;
+  margin: 10px;
+
+}
+
+.fotos img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="fotos">
+    <img src="MI FOTO NIF.jpeg">
+    <img src="MI FOTO.jpeg">
+  </div>
+
+  <h1>HOLA SOY NIFDA 💙</h1>
+  <p> ME GUSTA CANTAR Y BAILAR</p>
+
+  <button onclick="saludo()">Click</button>
+
+</div>
+
+<script>
+function saludo() {
+  alert("FUE UN GUSTO SALUDARLES");
+}
+</script>
+
+</body>
+</html>
